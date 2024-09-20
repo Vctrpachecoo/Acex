@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <img src="./assets/img/undraw_login_re_4vu2.svg" alt="Imagem Descritiva">
+        </aside>
+
+        <main>
+            <!-- COLOCAR LINK -->
+            <form action="#" method="POST" id="login_form">
+                <h1>Login</h1>
+
+                <label for="login_email">E-mail</label>
+                <div class="input-container">
+                    <input type="email" name="login_email_name" id="login_email">
+                </div>
+
+                <label for="login_password">Senha</label>
+                <div class="input-container">
+                    <input type="password" name="login_password_name" id="login_password">
+                </div>
+
+                <!-- COLOCAR LINK -->
+                <a href="#">Esqueceu sua senha?</a>
+                <button type="submit" id="login_button">Login</button>
+            </form>
+
+            <footer>
+                É Paciente e não possui cadastro? <a href="Profile_Paciente.html">Cadastre-se aqui!</a><br>
+                É Psicologo e não possui cadastro? <a href="Profile_Psicologo.html">Cadastre-se aqui!</a>
+            </footer>
+        </main>
+    </div>
+
+    <div id="message" style="display: none; position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000;"></div>
+</body>
+
+<script src="assets/js/LoginRoute.js"></script>
+
+</html>

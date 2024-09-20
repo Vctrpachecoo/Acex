@@ -1,0 +1,25 @@
+/** Variables - colors **/
+:root {
+    /* Light */
+    --color-light-50: #ffffff;
+    --color-light-100: #cfe1df;
+    --color-light-150: #ccc;
+
+    /* Dark */
+    --color-dark-50: #7c8486;
+    --color-dark-100: #333;
+    --color-dark-900: #000;
+
+    /* Blue */
+    --color-blue-50: #bbdfdc;
+    --color-blue-100: #92bbb8;
+    --color-blue-200: #5a9792;
+    --color-blue-500: #183446;
+
+
+    /* Yellow */
+    --color-yellow-50: #F5E0A3;
+    --color-yellow-50: #F1D47D;
+    --color-yellow-100: #E8B931;
+    --color-yellow-200: #DCAB18;
+}

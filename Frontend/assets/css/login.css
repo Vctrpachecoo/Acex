@@ -1,0 +1,150 @@
+@import url('../css/style.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-light-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: var(--color-light-50);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+aside {
+    width: 70%;
+    background-color: var(--color-blue-100);
+    display: flex;
+    justify-content: center;
+}
+
+aside img {
+    width: 60%;
+}
+
+main {
+    width: 50%;
+    padding: 60px 40px 10px;
+    background-color: var(--color-light-50);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: var(--color-dark-50);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-blue-100);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    color: var(--color-dark-900)000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#login_button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-blue-100);
+    color: var(--color-light-50);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login_button:hover {
+    scale: 1.02;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color-blue-200);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        height: 200px;
+    }
+
+    main {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+#message {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 300px; /* Ajuste conforme necessário */
+}
+.success {
+    background-color: green; /* Cor de sucesso */
+}
+.error {
+    background-color: red; /* Cor de erro */
+}
+

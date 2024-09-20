@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Profile_Psicologo.css">
+    <title>Cadastro Psicólogo</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <img src="./assets/img/undraw_join_re_w1lh.svg" alt="Imagem Descritiva">
+        </aside>
+
+        <main>
+            <form action="#" method="POST" id="cadastro_1_form">
+                <h1>Psicólogo - Criar nova conta</h1>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="cadastro_1_nome">Nome Completo</label>
+                        <input type="text" name="cadastro_1_nome_name" id="cadastro_1_nome" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_email">E-mail</label>
+                        <input type="email" name="cadastro_1_email_name" id="cadastro_1_email" placeholder="Digite o e-mail">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_crp">CRP</label>
+                        <input type="text" name="cadastro_1_crp_name" id="cadastro_1_crp" placeholder="Digite seu CRP">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_especialidade">Especialidade</label>
+                        <input type="text" name="cadastro_1_especialidade_name" id="cadastro_1_especialidade" placeholder="Digite sua Especialidade">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_password">Senha</label>
+                        <input type="password" name="cadastro_1_password_name" id="cadastro_1_password" placeholder="Digite a senha">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_confirm">Confirme a senha</label>
+                        <input type="password" name="cadastro_1_confirm_name" id="cadastro_1_confirm" placeholder="Digite a senha">
+                    </div>
+                </div>
+
+                <button type="submit" id="cadastro_1_button">Cadastrar</button>
+            </form>
+
+            <div id="message" class="message"></div>
+
+        </main>
+    </div>
+</body>
+
+<script src="./assets/js/PsicologoRoute.js"></script>
+
+</html>
