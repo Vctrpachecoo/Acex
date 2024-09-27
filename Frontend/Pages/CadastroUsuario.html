@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/CadastroUsuario.css">
+    <title>Cadastro Psicólogo</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <img src="../assets/img/undraw_join_re_w1lh.svg" alt="Imagem Descritiva">
+        </aside>
+
+        <main>
+            <form action="#" method="POST" id="cadastro_1_form">
+                <h1>Criar nova conta</h1>
+
+                <!-- Adicionar os radio buttons para seleção -->
+                <div class="radio-group" required>
+                    <div class="input-box">
+                        <input type="radio" id="tipo_paciente" name="tipo" value="paciente" checked>
+                        <label for="tipo_paciente">Sou Paciente</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="radio" id="tipo_psicologo" name="tipo" value="psicologo">
+                        <label for="tipo_psicologo">Sou Psicólogo</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="cadastro_1_nome">Nome Completo</label>
+                        <input type="text" name="nomeCompleto_name" id="cadastro_1_nome" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_email">E-mail</label>
+                        <input type="email" name="email_name" id="cadastro_1_email" placeholder="Digite o e-mail">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_crp">CRP</label>
+                        <input type="text" name="crp_name" id="cadastro_1_crp" placeholder="Digite seu CRP">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_especialidade">Especialidade</label>
+                        <input type="text" name="especialidade_name" id="cadastro_1_especialidade" placeholder="Digite sua Especialidade">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_password">Senha</label>
+                        <input type="password" name="senha_name" id="cadastro_1_password" placeholder="Digite a senha">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cadastro_1_confirm">Confirme a senha</label>
+                        <input type="password" name="confirmaSenha_name" id="cadastro_1_confirm" placeholder="Digite a senha">
+                    </div>
+                </div>
+
+                <button type="submit" id="cadastro_1_button">Cadastrar</button>
+            </form>
+
+            <div id="message" class="message"></div>
+
+        </main>
+    </div>
+
+    <script src="../assets/js/Cadastro/RouteConnectionCadastro.js"></script>
+    <script src="../assets/js/Cadastro/ValidacoesCadastro.js"></script>
+    
+</body>
+
+</html>

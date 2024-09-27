@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Victor\\Projects\\Teste2\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj": {}
+    "C:\\Users\\Victor\\Projects\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Victor\\Projects\\Teste2\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj": {
+    "C:\\Users\\Victor\\Projects\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Victor\\Projects\\Teste2\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj",
+        "projectUniqueName": "C:\\Users\\Victor\\Projects\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj",
         "projectName": "AcexxII.API",
-        "projectPath": "C:\\Users\\Victor\\Projects\\Teste2\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj",
+        "projectPath": "C:\\Users\\Victor\\Projects\\Acex\\Backend\\Backend\\AcexxII.API\\AcexxII.API.csproj",
         "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Victor\\Projects\\Teste2\\Acex\\Backend\\Backend\\AcexxII.API\\obj\\",
+        "outputPath": "C:\\Users\\Victor\\Projects\\Acex\\Backend\\Backend\\AcexxII.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
