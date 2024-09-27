@@ -16,7 +16,19 @@
 
         <main>
             <form action="#" method="POST" id="cadastro_1_form">
-                <h1>Psicólogo - Criar nova conta</h1>
+                <h1>Criar nova conta</h1>
+
+                <!-- Adicionar os radio buttons para seleção -->
+                <div class="radio-group" required>
+                    <div class="input-box">
+                        <input type="radio" id="tipo_paciente" name="tipo" value="paciente" checked>
+                        <label for="tipo_paciente">Sou Paciente</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="radio" id="tipo_psicologo" name="tipo" value="psicologo">
+                        <label for="tipo_psicologo">Sou Psicólogo</label>
+                    </div>
+                </div>
 
                 <div class="input-group">
                     <div class="input-box">
@@ -57,8 +69,43 @@
 
         </main>
     </div>
-</body>
 
-<script src="./assets/js/PsicologoRoute.js"></script>
+    <script src="./assets/js/PsicologoRoute.js"></script>
+    <script>
+        // JavaScript para habilitar/desabilitar campos de CRP e Especialidade e escurecer os campos desabilitados
+        const pacienteRadio = document.getElementById('tipo_paciente');
+        const psicologoRadio = document.getElementById('tipo_psicologo');
+        const crpField = document.getElementById('cadastro_1_crp');
+        const especialidadeField = document.getElementById('cadastro_1_especialidade');
+
+        // Função para limpar os campos e desabilitar
+        function toggleFields() {
+            if (pacienteRadio.checked) {
+                crpField.value = ''; // Limpa o campo CRP
+                especialidadeField.value = ''; // Limpa o campo Especialidade
+                crpField.disabled = true;
+                especialidadeField.disabled = true;
+                crpField.style.backgroundColor = '#e0e0e0'; // Escurecer o campo desabilitado
+                especialidadeField.style.backgroundColor = '#e0e0e0'; // Escurecer o campo desabilitado
+            } else {
+                crpField.disabled = false;
+                especialidadeField.disabled = false;
+                crpField.style.backgroundColor = ''; // Restaurar a cor original
+                especialidadeField.style.backgroundColor = ''; // Restaurar a cor original
+            }
+        }
+
+        // Marcar a opção "Paciente" por padrão e desabilitar os campos ao carregar a página
+        window.onload = function() {
+            toggleFields();
+        };
+
+        // Adiciona os eventos de mudança para os radios
+        pacienteRadio.addEventListener('change', toggleFields);
+        psicologoRadio.addEventListener('change', toggleFields);
+
+    </script>
+
+</body>
 
 </html>

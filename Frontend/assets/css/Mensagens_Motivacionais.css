@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D9E6E4; /* cor de fundo semelhante à da imagem */
+}
+
+/* ==================== NAVBAR STYLES ==================== */
+
+/* Estilo para a Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8B931; /* cor amarela da navbar */
+    padding: 20px 50px;
+    width: 100%; /* Corrigido para preencher toda a largura */
+    position: relative;
+    top: 0;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links a img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-profile a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ==================== MOTIVATIONAL SECTION STYLES ==================== */
+
+/* Seção da frase motivacional */
+.motivational-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #D9E6E4;
+}
+
+.motivational-container {
+    width: 70%; /* Ocupa 90% da tela */
+    margin-top: 50px; /* 10% de margem superior */
+    margin-bottom: 50px;
+    background-color: #FDF1CE; /* Fundo amarelo claro */
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.motivational-text {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #4A4A4A;
+    margin: 0;
+    position: relative;
+    z-index: 1; /* Para garantir que o texto fique acima da imagem */
+}
+
+.motivational-container img.motivational-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%; /* Ajuste conforme necessário */
+    opacity: 0.8; /* Ajuste de transparência para melhor integração */
+    z-index: 0; /* A imagem fica por trás do texto */
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+@media (max-width: 768px) {
+    /* Ajustes na Navbar para dispositivos móveis */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    .navbar-links a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-profile a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Ajustes no texto motivacional para dispositivos móveis */
+    .motivational-text {
+        font-size: 16px;
+    }
+
+    /* Ajuste do tamanho da imagem do girassol */
+    .motivational-container img.motivational-image {
+        width: 30%;
+    }
+}
