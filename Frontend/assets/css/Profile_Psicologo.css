@@ -119,10 +119,11 @@ button:hover {
     scale: 1.02;    
 }
 
-/* Responsividade */
+/* ================== Responsividade ====================== */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        margin-top: 270px;
     }
 
     aside {

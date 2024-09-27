@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+
   background-color: #d9e6e4; /* cor de fundo semelhante à da imagem */
 }
 
@@ -27,9 +27,6 @@ header {
   background-color: #e8b931; /* cor amarela da navbar */
   padding: 20px 50px;
   width: 100%; /* Corrigido para preencher toda a largura */
-  top: 0;
-  position: sticky;
-  z-index: 1000;
 }
 
 .navbar-logo {
@@ -241,26 +238,29 @@ header {
 
 /* Estilo geral para dispositivos móveis */
 @media (max-width: 768px) {
+
+  header {
+    position: static;
+  }
+  
   /* Navbar */
   .navbar {
     flex-direction: column; /* Empilha os itens verticalmente */
-    padding: 10px; /* Diminui o padding */
-    flex-direction: column; /* Empilha os links verticalmente */
+    padding: 5px; /* Diminui o padding */
     gap: 10px; /* Espaço entre os links */
-  }
-
-  .navbar-logo {
-    margin-bottom: 10px; /* Espaço abaixo do logo */
-  }
-
-  .navbar-button {
-    margin-top: 10px; /* Espaço acima do botão */
   }
 
   /* Seções */
   #home {
-    flex-direction: column; /* Empilha o conteúdo verticalmente */
-    align-items: center; /* Centraliza */
+    display: block;
+  }
+
+  #home .sign_up {
+    font-size: 40px;
+  }
+
+  #home .features li {
+    font-size: 30px;
   }
 
   .sign_up {
