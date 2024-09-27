@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d9e6e4; /* cor de fundo semelhante à da imagem */
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+/* ==================== NAVBAR STYLES ==================== */
+
+/* Estilo para a Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8b931; /* cor amarela da navbar */
+  padding: 20px 50px;
+  width: 100%; /* Corrigido para preencher toda a largura */
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-button button {
+  width: 80px;
+  height: 32px;
+  background-color: #e3e3e3;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-button button a {
+  text-decoration: none;
+  color: black;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+}
+
+.sign_up {
+  margin-top: 20px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9dc3c0;
+  width: 756px;
+  height: 464px;
+  border-radius: 0px 500px 500px 0px;
+  font-size: 61px;
+}
+
+.sign_up:hover {
+  scale: 1.02;
+}
+
+.sign_up img {
+  width: 300px;
+}
+
+#home a {
+  text-decoration: none;
+  color: black;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  font-size: 39px;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.features ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features ul li::before {
+  content: "-";
+  color: #ff9800; /* Cor laranja para o check */
+  margin-right: 10px;
+}
+
+#about {
+  margin-top: 20px;
+  padding: 40px;
+  background-color: #d3d3d3;
+  align-items: center;
+}
+
+#about .about-title h2 {
+  font-size: 39px;
+  font-weight: 600;
+}
+
+#about .about-content {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#about .about-content img {
+  width: 408px;
+  height: 308px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Footer Styling */
+#footer_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #ffffff; /* Fundo branco */
+  color: black; /* Texto preto */
+  flex-wrap: wrap; /* Para permitir que os itens se ajustem */
+  height: 250px;
+}
+
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.footer-logo-social {
+  display: flex;
+  flex-direction: column; /* Faz o logo ficar em cima */
+  align-items: center;
+}
+
+.footer-logo-social span img {
+  width: 25px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espaço entre logo e redes sociais */
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-buttons a {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-separator {
+  width: 1px;
+  height: 100px;
+  background-color: black; /* Barra preta separando */
+  margin: 0 30px;
+}
+
+.footer-address h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-address p,
+.footer-address a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-address a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Copyright Styling */
+#footer_copyright {
+  background-color: #1a1a1a; /* Fundo preto para o copyright */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  width: 100%;
+}
+
+/* Estilo geral para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    padding: 10px; /* Diminui o padding */
+    flex-direction: column; /* Empilha os links verticalmente */
+    gap: 10px; /* Espaço entre os links */
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px; /* Espaço abaixo do logo */
+  }
+
+  .navbar-button {
+    margin-top: 10px; /* Espaço acima do botão */
+  }
+
+  /* Seções */
+  #home {
+    flex-direction: column; /* Empilha o conteúdo verticalmente */
+    align-items: center; /* Centraliza */
+  }
+
+  .sign_up {
+    width: 100%; /* 100% da largura da tela */
+    margin: 20px 0; /* Margem vertical */
+  }
+
+  /* Ajustes para a seção About */
+  #about {
+    flex-direction: column; /* Empilha o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  #about .about-content {
+    flex-direction: column; /* Empilha as colunas */
+    align-items: center; /* Centraliza */
+  }
+
+  #about .about-content img {
+    margin-left: 0; /* Remove margem lateral */
+    margin-right: 0; /* Remove margem lateral */
+    width: 100%; /* Largura total */
+    height: auto; /* Mantém a proporção */
+  }
+
+  /* Footer */
+  #footer_items {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    height: auto; /* Ajusta a altura */
+  }
+
+  .footer-center {
+    flex-direction: column; /* Empilha os itens verticalmente */
+  }
+
+  .footer-separator {
+    display: none; /* Esconde a barra separadora */
+  }
+
+  /* Ajustes de texto */
+  .footer-address h5 {
+    font-size: 16px;
+  }
+
+  .footer-address p,
+  .footer-address a {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+  }
+
+  /* Ajustes para o copyright */
+  #footer_copyright {
+    font-size: 10px; /* Reduz o tamanho da fonte do copyright */
+  }
+}
