@@ -21,7 +21,7 @@ form.addEventListener('submit', (event) => {
     }
 
     // Faz a requisição POST para a API
-    fetch('http://localhost:8080/usuarios', { // Substitua pela URL correta da sua API
+    fetch('http://localhost:8080/users/registerUsers', { // Substitua pela URL correta da sua API
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ form.addEventListener('submit', (event) => {
     
         setTimeout(() => {
             messageDiv.style.display = 'none'; // Oculta após 2 segundos
-            window.location.href = 'login.html'; // Redireciona (opcional)
+            window.location.href = "/Pages/LoginUsuario.html"; // Redireciona (opcional)
         }, 2000); 
     })
     .catch(error => {
