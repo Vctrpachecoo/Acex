@@ -32,4 +32,18 @@ public class UserService {
         return usersRepository.save(usersEntity);
 
     }
+
+    public UsersEntity login(String email, String rawPassword) {
+
+        // Busca o usuário pelo e-mail
+        UsersEntity user = usersRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException("Usuário não encontrado"));
+
+        // Verifica se a senha fornecida (rawPassword) corresponde à senha criptografada no banco
+        if (!passwordEncoder.matches(rawPassword, user.getSenha())) {
+            throw new IllegalArgumentException("Credenciais inválidas.");
+        }
+
+        return user; // Pode retornar o usuário ou algum token de autenticação, caso implemente JWT
+    }
 }

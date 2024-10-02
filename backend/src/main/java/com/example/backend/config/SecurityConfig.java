@@ -13,7 +13,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Desabilita o CSRF
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/users/registerUsers", "/users/status").permitAll() // Permite o acesso sem autenticação
+                        .requestMatchers("/users/registerUsers", "/users/status", "/users/login").permitAll() // Permite o acesso sem autenticação
                         .anyRequest().authenticated() // Exige autenticação para outras requisições
                 );
         return http.build();

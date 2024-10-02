@@ -15,25 +15,23 @@
         </aside>
 
         <main>
-            <!-- COLOCAR LINK -->
-            <form action="#" method="POST" id="login_form">
+            <form id="login_form">
                 <h1>Login</h1>
-
+            
                 <label for="login_email">E-mail</label>
                 <div class="input-container">
-                    <input type="email" name="login_email_name" id="login_email">
+                    <input type="email" id="login_email" required>
                 </div>
-
+            
                 <label for="login_password">Senha</label>
                 <div class="input-container">
-                    <input type="password" name="login_password_name" id="login_password">
+                    <input type="password" id="login_password" required>
                 </div>
-
-                <!-- COLOCAR LINK -->
+            
                 <a href="#">Esqueceu sua senha?</a>
                 <button type="submit" id="login_button">Login</button>
             </form>
-
+            
             <footer>
                 Não possui cadastro? <a href="Profile_Psicologo.html">Cadastre-se aqui!</a><br>
                 Esqueceu a Senha? <a href="Forgot_Password.html">Redefina aqui!</a><br>
@@ -45,6 +43,6 @@
     <div id="message" style="display: none; position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000;"></div>
 </body>
 
-<script src="../assets/js/LoginRoute.js"></script>
+<script src="../assets/js/Login/RouteConnectionLogin.js"></script>
 
 </html>
