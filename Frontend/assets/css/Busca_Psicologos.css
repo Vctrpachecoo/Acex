@@ -1,0 +1,164 @@
+@import url('../css/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D9E6E4; /* cor de fundo semelhante à da imagem */
+}
+
+/* ==================== NAVBAR STYLES ==================== */
+
+/* Estilo para a Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8B931; /* cor amarela da navbar */
+    padding: 20px 50px;
+    width: 100%; /* Corrigido para preencher toda a largura */
+    position: relative;
+    top: 0;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links a img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-profile a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ==================== psychologist SECTION STYLES ==================== */
+
+/* Estilo da seção de psychologist */
+.psychologist-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #D9E6E4;
+}
+
+.psychologist-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 30px;
+    width: 65%;
+}
+
+/* Estilo para os cartões de psychologist */
+.psychologist-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.psychologist-pic {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.psychologist-info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.psychologist-name {
+    font-weight: bold;
+    font-size: 19px;
+    color: #4A4A4A;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.psychologist-name:hover {
+    color: #E8B931;
+}
+
+.psychologist-CRP, .psychologist-specialty {
+    font-size: 16px;
+    color: #7a7a7aa1;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+@media (max-width: 1200px) {
+    /* Ajustes na lista de psychologist para dispositivos móveis */
+    .psychologist-container {
+        grid-template-columns: repeat(2, 1fr); /* 1 coluna em telas menores */
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    .navbar-links a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-profile a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Ajustes na lista de psychologist para dispositivos móveis */
+    .psychologist-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas menores */
+        width: 100%;
+        padding: 0 20px;
+    }
+}
