@@ -1,0 +1,181 @@
+@import url('../css/style.css');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* cor de fundo semelhante à da imagem */
+    overflow-y: hidden;
+}
+
+/* ==================== NAVBAR STYLES ==================== */
+
+/* Estilo para a Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8B931; /* cor amarela da navbar */
+    padding: 20px 50px;
+    width: 100%; /* Corrigido para preencher toda a largura */
+    position: relative;
+    top: 0;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links a img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-profile a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ==================== MAIN CONTENT STYLES ==================== */
+
+.profile-section {
+    display: flex;
+    justify-content: flex-start; /* Colocar os itens no início */
+    padding: 30px 50px;
+    flex-grow: 1;
+    gap: 30px;
+    position: relative;
+    flex-direction: column;
+}
+
+/* Botão de voltar no canto esquerdo */
+.back-link {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 38px;
+    margin: 30px;
+}
+
+/* Estilizar a área de informações do psicólogo */
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.profile-content {
+    margin: 20px;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-info p {
+    color: #777;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Ajustar a seção de agendamento */
+.schedule-section {
+    margin-top: 20px;
+}
+
+.schedules {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+}
+
+.schedule-section label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.schedule-section select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.schedule-button {
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #9dc3c0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ==================== CHAT SECTION STYLES ==================== */
+
+.chat-section {
+    margin-top: -13px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background-color: #d3d3d3;
+    width: 300px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.chat-section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.chat-section input {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Ajustes para garantir que o layout fique no lugar */
+main {
+    display: flex;
+    justify-content: space-between;
+}

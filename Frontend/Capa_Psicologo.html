@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Configura o conjunto de caracteres para UTF-8, garantindo a exibição correta de acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o comportamento responsivo, ajustando o layout para diferentes tamanhos de tela -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Página do Psicólogo</title>
+    <link rel="stylesheet" href="./assets/css/Capa_Psicologo.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="./assets/img/nav_left_feather.svg" alt="Logo MenteConecta">
+                <span>MENTECONECTA</span>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="./psychologist.html"><img src="./assets/img/nav_center_1.svg" alt="Icone 1"></a></li>
+                <li><a href="./Respiracao_Guiada.html"><img src="./assets/img/nav_center_2.svg" alt="Icone 2"></a></li>
+                <li><a href="./Busca_Psicologos.html"><img src="./assets/img/nav_center_3.svg" alt="Icone 3"></a></li>
+                <li><a href="./Mensagens_Motivacionais.html"><img src="./assets/img/nav_center_4.svg" alt="Icone 4"></a></li>
+                <li><a href="https://cvv.org.br/" target="_self"><img src="./assets/img/nav_center_5.svg" alt="Icone 5"></a></li>
+            </ul>
+            <div class="navbar-profile">
+                <a href="./Dados_Paciente.html"><img src="./assets/img/nav_right_perfil.svg" alt="Perfil"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="profile-section">
+        <div class="profile-header">
+            <a class="back-link" href="./Busca_Psicologos.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="profile-info">
+                <img class="profile-picture" src="./assets/img/undraw_profile_pic.svg" alt="Psicólogo">
+                <div class="profile-content">
+                <h1>Nome do Psicólogo</h1>
+                <p>CRP<br>Especialidade</p>
+            </div>
+            </div>
+        </div>
+        <div class="schedule-section">
+            <div class="schedules">
+            <label for="horarios">Horários Disponíveis</label>
+            <select id="horarios">
+                <option value="value">Value</option>
+            </select>
+            </div>
+            <button class="schedule-button">Agendar Consulta</button>
+        </div>
+    </main>
+
+    <!-- Chat Section -->
+    <aside class="chat-section">
+        <h2>CHAT</h2>
+        <input type="text" value="Value">
+    </aside>
+</body>
+</html>
