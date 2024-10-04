@@ -1,8 +1,7 @@
 @import url('../css/style.css');
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff; /* cor de fundo semelhante à da imagem */
+    background-color: var(--color-light-50); /* cor de fundo semelhante à da imagem */
     overflow-y: hidden;
 }
 
@@ -13,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E8B931; /* cor amarela da navbar */
+    background-color: var(--color-yellow-100); /* cor amarela da navbar */
     padding: 20px 50px;
     width: 100%; /* Corrigido para preencher toda a largura */
     position: relative;
@@ -74,7 +73,7 @@ body {
     left: 0;
     top: 10px;
     text-decoration: none;
-    color: #333;
+    color: var(--color-dark-100);
     font-size: 38px;
     margin: 30px;
 }
@@ -106,7 +105,7 @@ body {
 .profile-info h1 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: var(--color-dark-100);
 }
 
 .profile-info p {

@@ -1,11 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('../css/style.css');
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #D9E6E4; /* cor de fundo semelhante à da imagem */
 }
 
@@ -16,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E8B931; /* cor amarela da navbar */
+    background-color: var(--color-yellow-100); /* cor amarela da navbar */
     padding: 20px 50px;
     width: 100%; /* Corrigido para preencher toda a largura */
     position: relative;
@@ -71,7 +66,7 @@ body {
 }
 
 .perfil-container {
-    border: 3px solid #E8B931;
+    border: 3px solid var(--color-yellow-100);
     width: 70%; /* Ocupa 70% da tela */
     margin-top: 0px; /* Espaço superior */
     margin-bottom: 50px;
@@ -106,7 +101,7 @@ body {
 .perfil-links a {
     font-size: 18px;
     font-weight: bold;
-    color: #E8B931;
+    color: var(--color-yellow-100);
     text-decoration: none;
 }
 

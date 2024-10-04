@@ -1,7 +1,6 @@
 @import url('../css/style.css');
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #D9E6E4; /* cor de fundo semelhante à da imagem */
     overflow-y: hidden;
 }
@@ -13,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E8B931; /* cor amarela da navbar */
+    background-color: var(--color-yellow-100); /* cor amarela da navbar */
     padding: 20px 50px;
     width: 100%; /* Corrigido para preencher toda a largura */
     position: relative;

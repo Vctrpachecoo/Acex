@@ -2,132 +2,72 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/Busca_Psicologos.css">
-    <title>Lista de Psicólogos</title>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+    <link rel="stylesheet" href="./assets/css/Busca_Psicologos.css"> <!-- Inclui o arquivo CSS para estilização -->
+    <title>Lista de Psicólogos</title> <!-- Define o título da página -->
 </head>
 
 <body>
+    <!-- Cabeçalho da página com a barra de navegação -->
     <header>
         <nav class="navbar">
+            <!-- Logo da Navbar -->
             <div class="navbar-logo">
-                <img src="./assets/img/nav_left_feather.svg" alt="Logo MenteConecta">
-                <span>MENTECONECTA</span>
+                <img src="./assets/img/nav_left_feather.svg" alt="Logo MenteConecta"> <!-- Logo do site -->
+                <span>MENTECONECTA</span> <!-- Texto do nome do site ao lado da logo -->
             </div>
+
+            <!-- Links de navegação -->
             <ul class="navbar-links">
-                <li><a href="./psychologist.html"><img src="./assets/img/nav_center_1.svg" alt="Icone 1"></a></li>
-                <li><a href="./Respiracao_Guiada.html"><img src="./assets/img/nav_center_2.svg" alt="Icone 2"></a></li>
-                <li><a href="./Busca_Psicologos.html"><img src="./assets/img/nav_center_3.svg" alt="Icone 3"></a></li>
-                <li><a href="./Mensagens_Motivacionais.html"><img src="./assets/img/nav_center_4.svg" alt="Icone 4"></a></li>
-                <li><a href="https://cvv.org.br/" target="_self"><img src="./assets/img/nav_center_5.svg" alt="Icone 5"></a></li>
+                <li><a href="./psychologist.html"><img src="./assets/img/nav_center_1.svg" alt="Icone 1"></a></li> <!-- Link para a página de psicólogos -->
+                <li><a href="./Respiracao_Guiada.html"><img src="./assets/img/nav_center_2.svg" alt="Icone 2"></a></li> <!-- Link para a página de respiração guiada -->
+                <li><a href="./Busca_Psicologos.html"><img src="./assets/img/nav_center_3.svg" alt="Icone 3"></a></li> <!-- Link para a página de busca de psicólogos -->
+                <li><a href="./Mensagens_Motivacionais.html"><img src="./assets/img/nav_center_4.svg" alt="Icone 4"></a></li> <!-- Link para a página de mensagens motivacionais -->
+                <li><a href="https://cvv.org.br/" target="_self"><img src="./assets/img/nav_center_5.svg" alt="Icone 5"></a></li> <!-- Link externo para o site CVV -->
             </ul>
+
+            <!-- Perfil do usuário -->
             <div class="navbar-profile">
-                <a href="./Dados_Paciente.html"><img src="./assets/img/nav_right_perfil.svg" alt="Perfil"></a>
+                <a href="./Dados_Paciente.html"><img src="./assets/img/nav_right_perfil.svg" alt="Perfil"></a> <!-- Link para o perfil do usuário -->
             </div>
         </nav>
     </header>
 
-    <!-- Seção da lista de Psicologos -->
+    <!-- Seção que exibe a lista de psicólogos -->
     <section class="psychologist-section">
         <div class="psychologist-container">
+            <!-- Cartão de um psicólogo -->
+            <div class="psychologist-card">
+                <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic"> <!-- Imagem do psicólogo -->
+                <div class="psychologist-info">
+                    <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a> <!-- Nome do psicólogo -->
+                    <p class="psychologist-CRP">CRP</p> <!-- Número do registro do psicólogo -->
+                    <p class="psychologist-specialty">Especialidade</p> <!-- Especialidade do psicólogo -->
+                </div>
+            </div>
+
+            <!-- Você pode adicionar quantos cartões de psicólogos forem necessários -->
             <div class="psychologist-card">
                 <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
                 <div class="psychologist-info">
                     <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
+                    <p class="psychologist-CRP">CRP</p>
+                    <p class="psychologist-specialty">Especialidade</p>
                 </div>
             </div>
+
+            <!-- Cartões adicionais -->
             <div class="psychologist-card">
                 <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
                 <div class="psychologist-info">
                     <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
+                    <p class="psychologist-CRP">CRP</p>
+                    <p class="psychologist-specialty">Especialidade</p>
                 </div>
             </div>
-            <div class="psychologist-card">
-                <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
-                <div class="psychologist-info">
-                    <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
-                </div>
-            </div>
-            <div class="psychologist-card">
-                <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
-                <div class="psychologist-info">
-                    <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
-                </div>
-            </div>
-            <div class="psychologist-card">
-                <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
-                <div class="psychologist-info">
-                    <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
-                </div>
-            </div>
-            <div class="psychologist-card">
-                <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
-                <div class="psychologist-info">
-                    <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
-                </div>
-            </div>
-            <div class="psychologist-card">
-                <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
-                <div class="psychologist-info">
-                    <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
-                </div>
-            </div>
-            <div class="psychologist-card">
-                <img src="./assets/img/undraw_profile_pic.svg" alt="Logo psychologist" class="psychologist-pic">
-                <div class="psychologist-info">
-                    <a href="./Capa_Psicologo.html" target="_self" class="psychologist-name">Nome do Psicólogo</a>
-                    <p class="psychologist-CRP">
-                        CRP
-                    </p>
-                    <p class="psychologist-specialty">
-                        Especialidade
-                    </p>
-                </div>
-            </div>
-            <!-- Adicione mais Psicologos conforme necessário -->
+
+            <!-- Continue repetindo conforme a necessidade -->
         </div>
     </section>
 

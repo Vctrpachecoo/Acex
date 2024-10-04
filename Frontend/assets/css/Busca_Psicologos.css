@@ -1,62 +1,57 @@
-@import url('../css/style.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('../css/style.css'); /* Importa o arquivo CSS de estilo global */
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Configura o comportamento suave de rolagem para a página */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #D9E6E4; /* cor de fundo semelhante à da imagem */
+    background-color: #D9E6E4; /* Define a cor de fundo da página */
 }
 
 /* ==================== NAVBAR STYLES ==================== */
 
-/* Estilo para a Navbar */
+/* Estilos para a barra de navegação (navbar) */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #E8B931; /* cor amarela da navbar */
-    padding: 20px 50px;
-    width: 100%; /* Corrigido para preencher toda a largura */
-    position: relative;
-    top: 0;
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaço igual entre os itens da navbar */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    background-color: var(--color-yellow-100); /* Cor de fundo amarela */
+    padding: 20px 50px; /* Espaçamento interno (20px em cima/baixo, 50px nas laterais) */
+    width: 100%; /* Preenche toda a largura da página */
+    position: relative; /* Permite posicionar o elemento relativamente ao seu local original */
+    top: 0; /* Fixa a navbar no topo da página */
 }
 
+/* Estilos para a logo da navbar */
 .navbar-logo {
-    display: flex;
-    align-items: center;
+    display: flex; /* Exibe logo e texto em linha */
+    align-items: center; /* Centraliza verticalmente o logo e o texto */
 }
 
 .navbar-logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 40px; /* Define a altura da imagem da logo */
+    margin-right: 10px; /* Espaçamento à direita da imagem */
 }
 
 .navbar-logo span {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
+    font-size: 20px; /* Tamanho da fonte do texto ao lado da logo */
+    font-weight: bold; /* Texto em negrito */
+    color: black; /* Cor preta do texto */
 }
 
+/* Estilos para os links da navbar */
 .navbar-links {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    display: flex; /* Exibe os links em linha */
+    justify-content: center; /* Centraliza os links */
+    gap: 50px; /* Espaçamento entre os links */
 }
 
 .navbar-links li {
-    display: inline-block;
+    display: inline-block; /* Exibe os itens de lista como blocos em linha */
 }
 
+/* Define o tamanho das imagens nos links da navbar */
 .navbar-links a img {
     width: 40px;
     height: 40px;
@@ -69,96 +64,103 @@ body {
 
 /* ==================== psychologist SECTION STYLES ==================== */
 
-/* Estilo da seção de psychologist */
+/* Estilos para a seção de psicólogos */
 .psychologist-section {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    background-color: #D9E6E4;
+    display: flex; /* Exibe os elementos em linha (ajustável por grid) */
+    justify-content: center; /* Centraliza os itens */
+    padding: 40px; /* Define o espaçamento interno da seção */
+    background-color: #D9E6E4; /* Cor de fundo semelhante ao fundo da página */
 }
 
+/* Contêiner de psicólogos exibido como grid */
 .psychologist-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 30px;
-    width: 65%;
+    display: grid; /* Define a exibição em grade */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas com tamanhos iguais */
+    gap: 30px; /* Espaçamento entre os itens */
+    width: 65%; /* Define a largura da seção */
 }
 
-/* Estilo para os cartões de psychologist */
+/* Estilos para os cartões dos psicólogos */
 .psychologist-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Fundo branco para os cartões */
+    padding: 20px; /* Espaçamento interno nos cartões */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Exibe o conteúdo dos cartões em linha */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
 }
 
+/* Estilo da imagem de perfil dos psicólogos */
 .psychologist-pic {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+    width: 50px; /* Largura da imagem */
+    height: 50px; /* Altura da imagem */
+    margin-right: 15px; /* Espaço à direita da imagem */
 }
 
+/* Informações dos psicólogos dentro do cartão */
 .psychologist-info {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+    display: flex; /* Exibe os textos em uma coluna */
+    gap: 10px; /* Espaço entre os textos */
+    flex-direction: column; /* Organiza os textos em coluna */
 }
 
+/* Nome do psicólogo com destaque */
 .psychologist-name {
-    font-weight: bold;
-    font-size: 19px;
-    color: #4A4A4A;
-    text-decoration: none;
-    margin-bottom: 5px;
+    font-weight: bold; /* Negrito no nome do psicólogo */
+    font-size: 19px; /* Tamanho da fonte do nome */
+    color: #4A4A4A; /* Cor cinza escuro */
+    text-decoration: none; /* Remove a decoração de link padrão (sublinhado) */
+    margin-bottom: 5px; /* Espaço abaixo do nome */
 }
 
 .psychologist-name:hover {
-    color: #E8B931;
+    color: var(--color-yellow-100); /* Altera a cor ao passar o mouse por cima */
 }
 
+/* Estilos para o CRP e a especialidade do psicólogo */
 .psychologist-CRP, .psychologist-specialty {
-    font-size: 16px;
-    color: #7a7a7aa1;
+    font-size: 16px; /* Tamanho da fonte para CRP e especialidade */
+    color: #7a7a7aa1; /* Cor cinza clara com opacidade */
 }
 
 /* ==================== RESPONSIVE STYLES ==================== */
 
+/* Estilos para telas menores (máximo de 1200px de largura) */
 @media (max-width: 1200px) {
-    /* Ajustes na lista de psychologist para dispositivos móveis */
+    /* Ajusta o layout para 2 colunas em telas menores */
     .psychologist-container {
-        grid-template-columns: repeat(2, 1fr); /* 1 coluna em telas menores */
-        width: 100%;
-        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr); /* Exibe 2 colunas em vez de 3 */
+        width: 100%; /* O contêiner ocupa 100% da largura */
+        padding: 0 20px; /* Ajusta o espaçamento lateral */
     }
 }
 
+/* Estilos para dispositivos móveis (máximo de 768px de largura) */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        padding: 10px 20px;
+        flex-direction: column; /* Navbar em coluna para melhor visualização */
+        padding: 10px 20px; /* Reduz o espaçamento da navbar */
     }
 
     .navbar-links {
-        gap: 30px;
-        margin-top: 10px;
+        gap: 30px; /* Reduz o espaçamento entre os links */
+        margin-top: 10px; /* Espaçamento superior para os links */
     }
 
     .navbar-links a img {
-        width: 30px;
+        width: 30px; /* Reduz o tamanho das imagens da navbar */
         height: 30px;
     }
 
     .navbar-profile a img {
-        width: 30px;
+        width: 30px; /* Reduz o tamanho da imagem do perfil */
         height: 30px;
     }
 
-    /* Ajustes na lista de psychologist para dispositivos móveis */
+    /* Ajusta o layout para 1 coluna em telas pequenas */
     .psychologist-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas menores */
-        width: 100%;
-        padding: 0 20px;
+        grid-template-columns: repeat(1, 1fr); /* Apenas 1 coluna em telas pequenas */
+        width: 100%; /* O contêiner ocupa 100% da largura */
+        padding: 0 20px; /* Ajusta o espaçamento lateral */
     }
 }
