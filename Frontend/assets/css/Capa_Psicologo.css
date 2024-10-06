@@ -2,7 +2,8 @@
 
 body {
     background-color: var(--color-light-50); /* cor de fundo semelhante à da imagem */
-    overflow-y: hidden;
+    overflow-y: auto; /* Permite rolagem vertical */
+    height: 100vh; /* Mantém altura de 100% da viewport */
 }
 
 /* ==================== NAVBAR STYLES ==================== */
@@ -65,6 +66,8 @@ body {
     gap: 30px;
     position: relative;
     flex-direction: column;
+    overflow-y: auto; /* Permitir rolagem na seção de perfil */
+    height: 100%; /* Preencher a altura da tela */
 }
 
 /* Botão de voltar no canto esquerdo */
@@ -135,6 +138,13 @@ body {
     padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
+    border: 1px solid var(--color-light-150);
+    border-radius: 10px;
+}
+
+.schedule-section select:focus-visible {
+    border-radius: 10px;
+    outline: 1px solid var(--color-dark-50);
 }
 
 .schedule-button {
@@ -145,20 +155,24 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    margin-left: 800px;
 }
 
 /* ==================== CHAT SECTION STYLES ==================== */
 
 .chat-section {
-    margin-top: -13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     position: absolute;
     right: 0;
     top: 100px;
     background-color: #d3d3d3;
     width: 300px;
     padding: 20px;
-    height: 100vh;
+    height: calc(102vh - 100px); /* Garante que o chat ocupe o restante da tela */
     overflow-y: auto;
+    margin-top: -13px;
 }
 
 .chat-section h2 {
@@ -167,14 +181,106 @@ body {
 }
 
 .chat-section input {
-    display: flex;
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    margin-top: auto;
+    border: 1px solid var(--color-light-150);
+    border-radius: 10px;
+}
+
+.chat-section input:focus-visible {
+    outline: 1px solid var(--color-dark-50);
 }
 
 /* Ajustes para garantir que o layout fique no lugar */
 main {
     display: flex;
     justify-content: space-between;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+@media (max-width: 768px) {
+    /* Ajustar a Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar-logo img {
+        height: 30px;
+    }
+
+    .navbar-logo span {
+        font-size: 16px;
+    }
+
+    .navbar-links {
+        gap: 20px;
+    }
+
+    .navbar-links a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-profile a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Ajustar a seção principal */
+    .profile-section {
+        padding: 20px 10px;
+        height: auto; /* Permitir que a altura seja ajustada pelo conteúdo */
+    }
+
+    /* Ajustar o layout de informações do psicólogo para uma coluna */
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .profile-picture {
+        height: 100px;
+    }
+
+    .profile-info h1 {
+        font-size: 20px;
+    }
+
+    .profile-info p {
+        font-size: 16px;
+    }
+
+    /* Ajustar a seção de agendamento */
+    .schedule-section {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .schedule-section select, .schedule-button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Ajustar a seção de chat */
+    .chat-section {
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+        height: 400px; /* Aumentar a altura da seção de chat para dispositivos móveis */
+        margin: 20px 0;
+        overflow-y: auto; /* Permitir rolagem dentro do chat */
+    }
 }
