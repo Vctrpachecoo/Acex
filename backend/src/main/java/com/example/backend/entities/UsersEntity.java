@@ -11,10 +11,21 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+// Representação em objeto da tabela no banco de dados
+// Lombok annotation que gera automaticamente os métodos getters, setters, toString, equals e hashCode.
 @Data
+
+// Indica que esta classe é uma entidade JPA, ou seja, mapeada para uma tabela no banco de dados.
 @Entity
+
+// Gera um construtor sem argumentos.
 @NoArgsConstructor
+
+// Gera um construtor com todos os argumentos.
 @AllArgsConstructor
+
+// Define a tabela associada à entidade e garante que o campo "email" seja único.
 @Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class UsersEntity {
 
@@ -24,13 +35,13 @@ public class UsersEntity {
 
     private String nome_completo; // Este é o nome do atributo na classe
 
-    @NotBlank(message = "O email é obrigatório.")
-    @Email(message = "O email deve ser válido.")
+    @NotBlank(message = "O email é obrigatório.") // Required
+    @Email(message = "O email deve ser válido.") // Required
     private String email;
 
-    @NotBlank(message = "A senha é obrigatória.")
-    @Size(min = 8, message = "A senha deve ter pelo menos 8 caracteres.")
-    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$",
+    @NotBlank(message = "A senha é obrigatória.") // Required
+    @Size(min = 8, message = "A senha deve ter pelo menos 8 caracteres.") // requisitos da senha
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$", // requisitos da senha
             message = "A senha deve conter ao menos um número, uma letra maiúscula, uma letra minúscula e um caractere especial.")
     private String senha;
 

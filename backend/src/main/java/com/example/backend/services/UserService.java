@@ -7,16 +7,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+// declara service
 @Service
 public class UserService {
 
+    // injeção de dependência do repository (chamadas do banco) jpa já tem tudo
     @Autowired
     private UsersRepository usersRepository;
 
+    // cria uma instância da classe BCryptPasswordEncoder que criptografa as senhas
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     public UsersEntity RegisterUser(UsersEntity usersEntity) {
 
+        // verifica se o email já está cadastrado
         if (usersRepository.findByEmail(usersEntity.getEmail()).isPresent()) {
             throw new IllegalArgumentException("Email já cadastrado.");
         }
@@ -29,10 +33,12 @@ public class UserService {
         // Criptografa a senha antes de salvar
         usersEntity.setSenha(passwordEncoder.encode(usersEntity.getSenha()));
 
+        // salva
         return usersRepository.save(usersEntity);
 
     }
 
+    // service de login (recebe o email e a senha criptografada como parametros)
     public UsersEntity login(String email, String rawPassword) {
 
         // Busca o usuário pelo e-mail

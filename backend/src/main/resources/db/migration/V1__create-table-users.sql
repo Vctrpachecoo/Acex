@@ -1,3 +1,6 @@
+-- primeira migration
+-- criação da tabela de usuários
+
 CREATE TABLE users (
       id BIGINT AUTO_INCREMENT PRIMARY KEY, -- Chave primária que será gerada automaticamente
       nome_completo VARCHAR(255) NOT NULL, -- Nome completo do usuário, não pode ser nulo
